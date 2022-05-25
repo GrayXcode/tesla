@@ -29,6 +29,7 @@ function Header() {
           <a href="#">Tesla Account</a>
           <CustomMenu onClick={() => setBurgerStatus(true)} />
         </RightMenu>
+
         <BurgerNav show={burgerStatus}>
           <CloseWrapper>
             <CustomClose onClick={() => setBurgerStatus(false)} />
@@ -70,7 +71,8 @@ function Header() {
           <li>
             <a href="#">Test Drive</a>
           </li>
-        </BurgerNav>
+              </BurgerNav>
+              
       </Container>
     </div>
   );
@@ -137,7 +139,7 @@ const BurgerNav = styled.div`
   display: flex;
   flex-direction: column;
   text-align: start;
-  transform: ${(props) => (props.show ? "translateX(0)" : "translateX(100%)")}
+  transform: ${(props) => (props.show ? "translateX(0)" : "translateX(100%)")} 
 
   transition: transform 0.2s;
 
